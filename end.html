@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz dla Ukochanej - Finał</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="end.css">
+</head>
+<body>
+    <div class="container">
+        <div id="congratulations">
+            <p class="fade-in congrats-text" id="congrats1">Gratulacje kochanie!</p>
+            <p class="fade-in congrats-text" id="congrats2">Przeszłaś ten quiz perfekcyjnie.</p>
+            <p class="fade-in congrats-text" id="congrats3">Teraz czas na Twój prezent...</p>
+        </div>
+        <div id="questionContainer" class="question-container hidden">
+            <h2>Ale zanim to, musisz odpowiedzieć na ostatnie pytanie:</h2>
+            <p class="question">KOCHASZ MNIE?</p>
+            <div class="answers">
+                <button onclick="showResult()">Tak</button>
+                <button onclick="showResult()">Bardzo</button>
+                <button onclick="showResult()">Najbardziej na świecie</button>
+                <button onclick="showBlackScreen()">Wole milene</button>
+            </div>
+        </div>
+        <div id="result" class="hidden">
+            <p class="final-message fade-in" id="finalMessage1">No to w takim razie pakuj walizkę kochanie,</p>
+            <p class="final-message fade-in" id="finalMessage2">bo w ten weekend jedziemy na weekend do</p>
+            <p class="destination typing" id="destination"></p>
+        </div>
+    </div>
+
+    <div id="blackScreen" class="black-screen hidden">
+        <p class="black-screen-text">ŻAL PL LEPIEJ ODPOWIEDŹ TERAZ DOBRZE</p>
+        <button class="return-button" onclick="hideBlackScreen()">Wróć do pytania</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="end.js"></script>
+</body>
+</html>
