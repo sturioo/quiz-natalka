@@ -73,5 +73,5 @@ function setNextQuestionLink(url) {
 startTimer();
 
 // Set the link for the next question
-setNextQuestionLink('final.html');
+setNextQuestionLink('end.html');
 
