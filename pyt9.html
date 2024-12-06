@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz dla Ukochanej - Pytanie 1</title>
+    <link rel="stylesheet" href="pyt.css">
+</head>
+<body>
+    <div class="container">
+        <div class="timer" id="timer">60</div>
+        <div class="image-container">
+            <img src="franek.png" alt="Zdjęcie związane z pytaniem" />
+        </div>
+        <div class="warning" id="warning">
+            <div>ZASTANÓW SIĘ DOBRZE</div>
+            <div style="font-size: 1rem;">Aby odpowiedzieć ponownie, rozwiąż zagadkę matematyczną:</div>
+        </div>
+        <h1 id="question">To teraz coś powspominajmy i powiedź mi jak nazywały się domki w których spaliśmy w sarbinowie?</h1>
+        <div class="options" id="options">
+            <button onclick="checkAnswer(this, '1')">Sunmare</button>
+            <button onclick="checkAnswer(this, '2')">Sunrise</button>
+            <button onclick="checkAnswer(this, '3')">Sielski zakątek</button>
+        </div>
+        <div class="math-puzzle" id="mathPuzzle">
+            <span id="mathQuestion">69 + 69 - 33 + 11 / 2 = </span>
+            <input type="number" id="mathAnswer" min="0" max="99">
+            <button onclick="checkMathAnswer()">Sprawdź</button>
+        </div>
+        <a href="pyt10.html" id="nextButton" class="next">
+            <button>Przejdź dalej</button>
+        </a>
+    </div>
+    <canvas id="confetti"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="pyt9.js"></script>
+</body>
+</html>
