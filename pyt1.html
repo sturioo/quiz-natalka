@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz dla Ukochanej - Pytanie 1</title>
+    <link rel="stylesheet" href="pyt.css">
+</head>
+<body>
+    <div class="container">
+        <div class="timer" id="timer">60</div>
+        <div class="image-container">
+            <img src="młoda.jpg" alt="Zdjęcie związane z pytaniem" />
+        </div>
+        <div class="warning" id="warning">
+            <div>ZASTANÓW SIĘ DOBRZE</div>
+            <div style="font-size: 1rem;">Aby odpowiedzieć ponownie, rozwiąż zagadkę matematyczną:</div>
+        </div>
+        <h1 id="question">Na początek coś prostego. Co jako pierwsze próbowałem narysować ci na paznokciach pod posnania?</h1>
+        <div class="options" id="options">
+            <button onclick="checkAnswer(this, '1')">kwiatka</button>
+            <button onclick="checkAnswer(this, '2')">kotka</button>
+            <button onclick="checkAnswer(this, '3')">serce</button>
+        </div>
+        <div class="math-puzzle" id="mathPuzzle">
+            <span id="mathQuestion">2 + 2 = </span>
+            <input type="number" id="mathAnswer" min="0" max="99">
+            <button onclick="checkMathAnswer()">Sprawdź</button>
+        </div>
+        <a href="pyt2.html" id="nextButton" class="next">
+            <button>Przejdź dalej</button>
+        </a>
+    </div>
+    <canvas id="confetti"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="py1.js"></script>
+</body>
+</html>
+
