@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz dla Ukochanej - Pytanie 1</title>
+    <link rel="stylesheet" href="pyt.css">
+</head>
+<body>
+    <div class="container">
+        <div class="timer" id="timer">60</div>
+        <div class="image-container">
+            <img src="jezyk.jpg" alt="Zdjęcie związane z pytaniem" />
+        </div>
+        <div class="warning" id="warning">
+            <div>ZASTANÓW SIĘ DOBRZE</div>
+            <div style="font-size: 1rem;">Aby odpowiedzieć ponownie, rozwiąż zagadkę matematyczną:</div>
+        </div>
+        <h1 id="question">Kocham wszystkie prezenty od ciebie i wszystkie również trzymam, ale czy ty pamiętasz co mi dałaś na dzień chłopaka rok temu i jakiego było to koloru?</h1>
+        <div class="options" id="options">
+            <button onclick="checkAnswer(this, '1')">Fioletowy Hot Weels</button>
+            <button onclick="checkAnswer(this, '2')">Hot Weels z literką N</button>
+            <button onclick="checkAnswer(this, '3')">Zestaw gaci i skarpetek</button>
+        </div>
+        <div class="math-puzzle" id="mathPuzzle">
+            <span id="mathQuestion">4 x 5/2 x 15 = </span>
+            <input type="number" id="mathAnswer" min="0" max="99">
+            <button onclick="checkMathAnswer()">Sprawdź</button>
+        </div>
+        <a href="pyt8.html" id="nextButton" class="next">
+            <button>Przejdź dalej</button>
+        </a>
+    </div>
+    <canvas id="confetti"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="pyt7.js"></script>
+</body>
+</html>
